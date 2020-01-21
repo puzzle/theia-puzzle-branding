@@ -1,5 +1,5 @@
 {
-  "name": "@theia/cpp-branding",
+  "name": "@puzzle/theia-puzzle-branding",
   "keywords": [
     "theia-extension"
   ],
@@ -23,7 +23,7 @@
   },
   "theiaExtensions": [
     {
-      "frontend": "lib/browser/cpp-branding-frontend-module"
+      "frontend": "lib/browser/puzzle-branding-frontend-module"
     }
   ],
   "license": "EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0"

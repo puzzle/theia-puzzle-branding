@@ -9,6 +9,6 @@
     "lerna": "2.4.0"
   },
   "workspaces": [
-    "cpp-branding", "browser-app", "electron-app"
+    "puzzle-branding", "browser-app", "electron-app"
   ]
 }
