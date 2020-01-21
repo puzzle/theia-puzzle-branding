@@ -5,7 +5,6 @@
   ],
   "version": "0.0.1",
   "files": [
-    "lib",
     "src"
   ],
   "dependencies": {
@@ -23,7 +22,7 @@
   },
   "theiaExtensions": [
     {
-      "frontend": "lib/browser/puzzle-branding-frontend-module"
+      "frontend": "src/browser/puzzle-branding-frontend-module"
     }
   ],
   "license": "EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0"
