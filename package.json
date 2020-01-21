@@ -1,14 +1,30 @@
 {
-  "private": true,
-  "scripts": {
-    "prepare": "lerna run prepare",
-    "rebuild:browser": "theia rebuild:browser",
-    "rebuild:electron": "theia rebuild:electron"
+  "name": "@puzzle/theia-puzzle-branding",
+  "keywords": [
+    "theia-extension"
+  ],
+  "version": "0.3.18",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "dependencies": {
+    "@theia/core": "latest"
   },
   "devDependencies": {
-    "lerna": "2.4.0"
+    "rimraf": "latest",
+    "typescript": "latest"
   },
-  "workspaces": [
-    "puzzle-branding", "browser-app", "electron-app"
-  ]
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "prepare": "yarn run clean && yarn run build",
+    "watch": "tsc -w"
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/puzzle-branding-frontend-module"
+    }
+  ],
+  "license": "EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0"
 }
